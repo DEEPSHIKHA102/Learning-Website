@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+</head>
+<link rel="stylesheet" href="css/style.css">
+<style>
+    /* CSS Reset */
+    body{
+        margin: 0px;
+        padding: 0px;
+        background:  rgb(169, 205, 206);
+    }
+    .container{
+        margin: 40px auto;
+        width: 95%;
+    }
+    .contact-box{
+        background:#fff ;
+        display: flex;
+    }
+    .contact-left{
+        flex-basis: 50%;
+        padding: 40px 50px;
+    }
+    .contact-right{
+        flex-basis: 50%;
+        padding: 40px 60px;
+        background-color:cornflowerblue;
+        color: #fff;
+    }
+    .input-row{
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+    }
+    .input-row .input-group{
+        flex-basis: 45% ;
+    }
+    input{
+        width: 70%;
+        border:none;
+        border-bottom: 1px solid #ccc;
+        outline: none;
+        padding-bottom: 5px;
+    }
+    textarea{
+        width: 90px;
+        border:1px solid #ccc;
+        outline: none;
+        padding: 0px;
+        box-sizing: border-box;
+    }
+   button{
+    background:#1c00b5 ;
+    width: 95px;
+    border: none;
+    outline: none;
+    color: #fff;
+    height:35px;
+    border-radius: 30px;
+    margin-top: 20px;
+    box-shadow:0px 5px 15px 0px rgba(28,0,181,0.3) ;
+
+   }
+   .contact-left h3{
+    color: #1c00b5;
+    font-weight: 600;
+    margin-bottom: 30px;
+   }
+   .contact-right h3{
+    
+    font-weight: 600;
+    margin-bottom: 40px;
+   }
+   
+   
+</style>
+<body>
+    <div class="container">
+        <h1 style="text-align: center;"><u>Contact Us</u></h1>
+        <span style="margin: 40px"></span>
+        <p style="color: brown;"><em>We would love to respond to your queries and help you succeed.<br>Feel free to get in touch with us.</em> </p>
+        <span style="margin: 50px"></span>
+        <div class="contact-box">
+            <div class="contact-left">
+                <h3>Sent your request</h3>
+                <span style="margin: 40px"></span>
+                <form action="/signup" method="POST">
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>Name:</label>
+                        <input type="text" placeholder="first_name">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>Phone:</label>
+                        <input type="text" placeholder="+1 412 520 3221">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>Email:</label>
+                        <input type="email" placeholder="email">
+                        </div>
+                    </div>
+                    <div class="input-row">
+                        <div class="input-group">
+                        <label>subject:</label>
+                        <input type="text" placeholder="sub_name">
+                        </div>
+                    </div>
+                    <label>Additional Information:</label>
+                    <textarea rows="5" placeholder="Text here"></textarea><br>
+                    <button type="submit">Send</button>
+                </form>
+
+            </div>
+            <div class="contact-right">
+                <h3>Reach us</h3>
+                <tabel>
+                    <tr>
+                        <td>Email:</td>
+                        <td>paldeepshikha102@gmail.com</td>
+                        
+                    </tr><br>
+                    </tabel>
+                    <table>
+                    <tr>
+                        <td>Phone:</td>
+                        <td>+1 012 345 6789</td>
+                    </tr><br></table>
+                    <table><br>
+                    <tr>
+                        <td>Address:
+                        Lovely Professional university<br> <span style="margin: 35px"></span>Jalandhar-Delhi,GT-road,Phagwara,<br><span style="margin: 35px"></span>punjab 144001</td>
+                    </tr>
+                </tabel>
+
+            </div>
+        </div>
+    </div>
+    
+</body>
+</html>

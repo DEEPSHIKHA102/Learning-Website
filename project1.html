@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>UMS-Home</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<style>
+    *{
+margin: 0;
+padding: 0;
+}
+.main{
+width: 1470px;
+background-color: black;
+height: 1500px;
+position:absolute;
+}
+.main2{
+width:1000px;
+height:1500px;
+background-color: white;
+position:absolute;
+left:240px;
+}
+.navbar{
+width:1000px;
+height:60px;
+margin: auto;
+background:url(7.jpg);
+}
+.logo{
+float: left;
+width: auto;
+position: absolute;
+left:8px;
+top:20px;
+}
+.logo2{
+text-align: center;
+}
+.profil1{
+width: 270px;
+height:210px;
+background-color:rgb(6, 201, 255);
+border-radius:20px;
+position: absolute;
+float:left;
+top:200px;
+text-transform:capitalize;
+text-align: center;
+
+}
+.photo{
+float:left;
+position:absolute;
+left:15px;
+top:55px;
+border-width:5px;
+border-style:solid;
+border-color:rgb(255, 255, 255);
+}
+.profil2{
+width:270px;
+height:615px;
+background-color:whitesmoke;
+position:absolute;
+float:left;
+top:125px;
+}
+.tip{
+width:270px;
+height:185px;
+position:absolute;
+top:450px;
+}
+.tipp{
+text-align: center;
+text-transform: capitalize;
+}
+.text{
+position:absolute;
+float: right;
+top:70px;
+left:120px;
+text-transform: capitalize;
+color:black;
+}
+.line{
+padding:30px;
+border-bottom-width:5px;
+border-bottom-style:solid;
+border-bottom-color:gold;
+}
+.menu{
+width: 680px;
+height:40px;
+position:absolute;
+float:left;
+left:245px;
+top:70px;
+}
+ul{
+float: right;
+display: flex;
+justify-content: center;
+align-items: center;
+}
+ul li{
+list-style: none;
+margin-left:55px;
+margin-top: 15px;
+font-size:14px;
+}
+ul li a{
+text-decoration: none;
+font-family: Arial;
+font-weight: bold;
+transition: 0.4s ease-in-out;
+font-size:smaller;
+color:rgb(53, 51, 51)
+}
+ul li a:hover{
+color:gold;
+}
+.time{
+padding-top: 35px;
+padding-left: 300px;
+font-family: Arial;
+font-weight: bold;
+text-transform: capitalize;
+}
+.att{
+width: 700px;
+height:190px;
+background-color:whitesmoke;
+position:absolute;
+float:left;
+left:280px;
+top:60px;
+}
+table{
+border:1px solid gray;
+border-collapse:collapse;
+width:100%;
+height:100%;
+}
+table th{
+border:1px solid grey;
+border-collapse:collapse;
+text-align:center;
+background-color:rgb(110, 206, 238);
+font-family: Arial;
+font-weight: bold;
+color:white;
+}
+table td{
+border:1px solid gray;
+border-collapse:collapse;
+text-align:left;
+text-indent:10px;
+}
+tr:nth-child(odd){
+background-color:lightblue;
+}
+tr:hover{
+background-color:rgb(139, 217, 243);
+}
+.ann{
+padding-top: 670px;
+padding-left: 100px;
+font-family: Arial;
+font-weight: bold;
+text-transform: capitalize;
+color: rgb(110, 206, 238);
+}
+.scrollbg{
+border:1px solid gray;
+width:820px;
+height:640px;
+position: absolute;
+float: left;
+left:90px;
+top:700px;
+}
+.scroll1{
+background-color: whitesmoke;
+width:810px;
+height:640px;
+overflow: hidden;
+overflow-y: scroll;
+text-transform: capitalize;
+padding:10px;
+}
+.h{
+font-size: large;
+}
+.b{
+font-size: large;
+color:rgb(6, 201, 255);
+}
+.leave{
+width: 200px;
+height: 30px;
+position: absolute;
+float: right;
+right: 100px;
+top:450px;
+text-transform: capitalize;
+font-family: Arial;
+font-weight: bold;
+}
+.scrollbg1{
+border:1px solid gray;
+width:250px;
+height:270px;
+position: absolute;
+float: left;
+left:700px;
+top:350px;
+background-color: rgb(221, 219, 219);
+}
+.scroll2{
+width:250px;
+height:250px;
+overflow: hidden;
+overflow-y: scroll;
+text-transform: capitalize;
+padding:10px;
+}
+.msg{
+width: 200px;
+height: 30px;
+position: absolute;
+float: right;
+right: 500px;
+top:450px;
+text-transform: capitalize;
+font-family: Arial;
+font-weight: bold;
+}
+.scrollbg2{
+border:1px solid gray;
+width:350px;
+height:270px;
+position: absolute;
+float: left;
+left:300px;
+top:350px;
+background-color: rgb(221, 219, 219);
+}
+.scroll3{
+width:350px;
+height:250px;
+overflow: hidden;
+overflow-y: scroll;
+text-transform: capitalize;
+padding:10px;
+}
+</style>
+<body>
+    <h1 style="text-align: center;">University Management System</h1>
+<div class="main">
+<div class="main2">
+<div class="navbar">
+<div class="logo"><img src="data:image/png;base64,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" width="200" height="80"></div>
+<div class="logo2"><img src="https://hindigovtscheme.com/wp-content/uploads/2022/03/LPU-UMS-Login.png" width="150" height="80"></div>
+</div>
+<div class="menu">
+<ul>
+    <li><a href="">HOME</a></li>
+<li><a href="">TIME TABLE</a></li>
+<li><a href="">EXAMINATION</a></li>
+<li><a href="">CHANGE PASSWORD</a></li>
+<li><a href="">LOG OUT</a></li>
+</ul>
+</div>
+<div class="line"></div>
+<div class="leave">teacher on leave</div>
+<div class="time">today's time table</div>
+<div class="msg">messages</div>
+<div class="profil2"><div class="photo"><img height="80" width="80" src="https://hindigovtscheme.com/wp-content/uploads/2022/03/LPU-UMS-Login.png"></div>
+<div class="text">welcome<br>DEEPSHIKHA PAL<br>(12217173)</div>
+<div class="profil1">
+<br>Roll No - RKOC21A18 (Term:122231)<hr>
+<br>Group - 1 (Section:KOC21)<hr>
+<br>Programme - P132::B.Tech.<br>(Computer Science & Engineering)<hr>
+<br><abbe title="No Books Issued">books issued from library-0</abbe><hr>
+<br><abbe title ="Check EXAMINATION For seating plan">Seating plan-3</abbr>
+</div>
+<div class="tip">
+<div class="tipp"><p>eat a variety of different food.eat plenty of fruits,vagetables and starchy,fibre.cut back on fatty foods.eat sensible amount-don't be greedy!</p></div>
+</div>
+<div class="att">
+<table>
+<tr>
+<th>Time</th>
+<th>Course</th>
+<th>Room Number</th>
+<th>Att.Status</th>
+</tr>
+<tr>
+<td>08-09 AM</td>
+<td>MTH174</td>
+<td>38-917 : LPULive</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>09-10 AM</td>
+<td>CSE326</td>
+<td>25-403 : LPULive</td>
+<td>Present</td>
+</tr>
+<tr>
+<td>10-11 AM</td>
+<td>CSE111</td>
+<td>26-601A : LPULive</td>
+<td> Not Marked</td>
+</tr>
+<tr>
+<td>11-12 AM</td>
+<td>ECE249</td>
+<td>25-101 : LPULive</td>
+<td>Present</td>
+</tr>
+</table>
+</div>
+<div class="scrollbg1">
+<div class="scroll2">
+<div class="h">cource code :- CSE111</div><hr><br>
+teacher name : mr.Gaurav Pushkarna<br><br>
+section : KOC21<br><br>
+day span : full day<br><br><hr><br><br>
+<div class="h">cource code :- INT108</div><hr><br>
+teacher name : mr.Bhupinder singh<br><br>
+section : KOC21<br><br>
+day span : full day
+</div>
+</div>
+<div class="scrollbg2">
+<div class="scroll3">
+<div class="b">REGARGING PROJECT FILE<br>BY: ISHA(DEC 03,2022</div>
+project submission for your section is <br>
+12 December it means upto 12 December <br>
+you neet to upload your project file<br>
+on ums after 12th portal for online<br>
+submission will be closed and rest viva<br>
+will be conducted in class. content for <br>
+report writing<br>
+1.introduction to your project <br>
+2.features of your project<br>
+3.flowchart<br>
+4.respective screenshots of project<br>
+5.code for the screenshots<br><br><hr>
+<div class="b">REGISTER NOW FOR CROWDSOURCE LEARNING COMMUNITY - LPU<br>By: Harjeet Kaur (Nov 10, 2022)</div><br><br>
+Dear Student,<br><br>
+We at Google Developer Student Club - LPU are<br>
+delighted to announce the Crowdsource Learning Community Program.<br><br>
+Why are you still waiting?
+</div>
+</div>
+<div class="ann"><img src="" style="color: black;">Announcements</div>
+<div class="scrollbg">
+<div class="scroll1">
+<div class="h">**Selection Trails for Yoga (Men/Women) Team Nov 28,2022</div><br><br>
+The Division of Sport is conducting trials for Yoga Players for All India Inter University Yoga (Men/Women) Event. Interested students can show up on the below mentioned schedule.<br><br>
+
+Game: Yoga (Men/Women)<br><br>
+
+Venue:- Block 18, Room number 601<br><br>
+
+Date:- 20th December 2022 (Monday).<br><br>
+
+Name of Faculty :- Dr Neelam Sharma<br><br>
+
+Timing:- 3PM to 5PM(No Duty Leave) <br> <br>
+
+For More information contact Division of Sports, Block 47, Room No 203<br><br><hr>
+<div class="h">**New Blood Donation Camp on 1st December 2021 Nov 30,2022</div><br><br>
+Dear All,
+
+Do you feel you don't have much to offer?<br><br>
+
+You have the most precious resource of all: the ability to save a life by donating blood! Help share this invaluable gift with someone in need. Rarely do we get a chance to serve the society especially if it is a matter of saving some one's life.<br><br>
+
+Luckily in December 2022 each one of us is getting a chance to save three lives. A Voluntary blood donation camp is being organized by Inner Wheel Club, Sri Ram Hospital Jalandhar & “LPUNSS units Aahavan | Sankalp ”, an initiative of Department of Community Services, Division of Youth Affairs, Student Welfare Wing, LPU.<br><br>
+
+Do you know that,<br><br>
+
+* Every 3 out of 10 people in India need blood.<br><br>
+
+* 75% of the voluntary donors in our country donate only once per year.<br><br>
+
+* This shortage can be overcome if just 2% of our country's youth donate blood.<br><br>
+
+Date: 1st December, 2022<br><br>
+
+Time:8:00 A.M. - 6:00 P.M.<br><br>
+
+Venue 1: Block 27<br><br>
+
+Venue 2 :Uni Hospital<br><br><hr>
+<div class="h">**Memory and Concentration Lab 'A road to positivity, personality development and holistic health with Psycho-Neurobics' (Ref. No. LPU/DSR/IC/221130/001)</div><br>(12/9/2022 12:36:05 PM)<br><br>
+Happiness cell invites all students and faculty of Lovely Professional University to Visit Bk 8, Room 208 and use the Concentration and Memory Lab<br>
+We all are aware that as human beings we are capable of performing amazing physical feats<br><br>
+Do you<br><br>
+
+· Want to reduce mental stress and increase your concentration level and memory power?<br><br>
+
+· Want to enhance your performance and productivity coefficient?<br><br>
+
+· Want to be happy healthy and content?<br><br>
+
+Psycho- Neurobics is a practical science to enhance concentration power, positivity in life and healing for physical impairments.<br><br>
+
+Benefits of Psycho-Neurobics practice,<br><br>
+
+· Improves Concentration and focus of mind.<br><br>
+
+· It enhances memory and recollection power thereby enhances your performance in the exams.<br><br>
+
+· Psycho-Neurobics practices have been found to be very effective in drug de addiction.<br><br>
+
+. It relaxes cells and tissues in our body.<br><br>
+
+· Releases stress, anxiety and restores peace of mind.<br><br>
+
+· It helps to cure depression and cures brain and nerve disorders.<br><br>
+
+· It heals the organs, keeps body health and eliminates many hereditary diseases.<br><br>
+
+· Helps us get rid of chronic fatigue syndrome<br><br>
+
+· Relieves migraine pain<br><br>
+
+· It improves eye vision.<br><br>
+
+Meet Dr Mahesh Dogra to learn more ….<br><br>
+
+Tuesday & Saturday: 3.30pm - 5.30pm<br><br>
+
+With more than 30 years of experience in various industries,<br><br>
+
+Dr.Mahesh Dogra is a Ph.D. in Vedic Science & Psycho Neurobics from Yoga Samskrutham University - Florida , USA<br><br>
+
+An MBA in Self-Management & Crisis Management from Tamil Nadu Sports University & M.Sc. in Psycho Neurobics.<br><br>
+
+Uploaded By:<br><br>
+Office of HOD<br><br>
+Division of Student Relationship<br><br>
+*This is computer generated notice, not requiring signature<br><br>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

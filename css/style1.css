@@ -1,0 +1,251 @@
+*{
+    margin: 0;
+    padding: 0;
+    }
+    .main{
+    width: 1470px;
+    background-color: black;
+    height: 1500px;
+    position:absolute;
+    }
+    .main2{
+    width:1000px;
+    height:1500px;
+    background-color: white;
+    position:absolute;
+    left:240px;
+    }
+    .navbar{
+    width:1000px;
+    height:60px;
+    margin: auto;
+    background:url(7.jpg);
+    }
+    .logo{
+    float: left;
+    width: auto;
+    position: absolute;
+    left:8px;
+    top:20px;
+    }
+    .logo2{
+    text-align: center;
+    }
+    .profil1{
+    width: 270px;
+    height:210px;
+    background-color:rgb(6, 201, 255);
+    border-radius:20px;
+    position: absolute;
+    float:left;
+    top:200px;
+    text-transform:capitalize;
+    text-align: center;
+    
+    }
+    .photo{
+    float:left;
+    position:absolute;
+    left:15px;
+    top:55px;
+    border-width:5px;
+    border-style:solid;
+    border-color:rgb(255, 255, 255);
+    }
+    .profil2{
+    width:270px;
+    height:615px;
+    background-color:whitesmoke;
+    position:absolute;
+    float:left;
+    top:125px;
+    }
+    .tip{
+    width:270px;
+    height:185px;
+    position:absolute;
+    top:450px;
+    }
+    .tipp{
+    text-align: center;
+    text-transform: capitalize;
+    }
+    .text{
+    position:absolute;
+    float: right;
+    top:70px;
+    left:120px;
+    text-transform: capitalize;
+    color:black;
+    }
+    .line{
+    padding:30px;
+    border-bottom-width:5px;
+    border-bottom-style:solid;
+    border-bottom-color:gold;
+    }
+    .menu{
+    width: 680px;
+    height:40px;
+    position:absolute;
+    float:left;
+    left:245px;
+    top:70px;
+    }
+    ul{
+    float: right;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    }
+    ul li{
+    list-style: none;
+    margin-left:55px;
+    margin-top: 15px;
+    font-size:14px;
+    }
+    ul li a{
+    text-decoration: none;
+    font-family: Arial;
+    font-weight: bold;
+    transition: 0.4s ease-in-out;
+    font-size:smaller;
+    color:rgb(53, 51, 51)
+    }
+    ul li a:hover{
+    color:gold;
+    }
+    .time{
+    padding-top: 35px;
+    padding-left: 300px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: capitalize;
+    }
+    .att{
+    width: 700px;
+    height:190px;
+    background-color:whitesmoke;
+    position:absolute;
+    float:left;
+    left:280px;
+    top:60px;
+    }
+    table{
+    border:1px solid gray;
+    border-collapse:collapse;
+    width:100%;
+    height:100%;
+    }
+    table th{
+    border:1px solid grey;
+    border-collapse:collapse;
+    text-align:center;
+    background-color:rgb(110, 206, 238);
+    font-family: Arial;
+    font-weight: bold;
+    color:white;
+    }
+    table td{
+    border:1px solid gray;
+    border-collapse:collapse;
+    text-align:left;
+    text-indent:10px;
+    }
+    tr:nth-child(odd){
+    background-color:lightblue;
+    }
+    tr:hover{
+    background-color:rgb(139, 217, 243);
+    }
+    .ann{
+    padding-top: 670px;
+    padding-left: 100px;
+    font-family: Arial;
+    font-weight: bold;
+    text-transform: capitalize;
+    color: rgb(110, 206, 238);
+    }
+    .scrollbg{
+    border:1px solid gray;
+    width:820px;
+    height:640px;
+    position: absolute;
+    float: left;
+    left:90px;
+    top:700px;
+    }
+    .scroll1{
+    background-color: whitesmoke;
+    width:810px;
+    height:640px;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-transform: capitalize;
+    padding:10px;
+    }
+    .h{
+    font-size: large;
+    }
+    .b{
+    font-size: large;
+    color:rgb(6, 201, 255);
+    }
+    .leave{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    float: right;
+    right: 100px;
+    top:450px;
+    text-transform: capitalize;
+    font-family: Arial;
+    font-weight: bold;
+    }
+    .scrollbg1{
+    border:1px solid gray;
+    width:250px;
+    height:270px;
+    position: absolute;
+    float: left;
+    left:700px;
+    top:350px;
+    background-color: rgb(221, 219, 219);
+    }
+    .scroll2{
+    width:250px;
+    height:250px;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-transform: capitalize;
+    padding:10px;
+    }
+    .msg{
+    width: 200px;
+    height: 30px;
+    position: absolute;
+    float: right;
+    right: 500px;
+    top:450px;
+    text-transform: capitalize;
+    font-family: Arial;
+    font-weight: bold;
+    }
+    .scrollbg2{
+    border:1px solid gray;
+    width:350px;
+    height:270px;
+    position: absolute;
+    float: left;
+    left:300px;
+    top:350px;
+    background-color: rgb(221, 219, 219);
+    }
+    .scroll3{
+    width:350px;
+    height:250px;
+    overflow: hidden;
+    overflow-y: scroll;
+    text-transform: capitalize;
+    padding:10px;
+    }
